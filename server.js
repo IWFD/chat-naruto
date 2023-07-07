@@ -46,6 +46,10 @@ const characterNames = [
 
 app.use(express.static('public'));
 
+app.get('/socket.io/socket.io.js', (req, res) => {
+  res.sendFile(__dirname + '/node_modules/socket.io/client-dist/socket.io.js');
+});
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
