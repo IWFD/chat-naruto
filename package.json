@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "build": "echo 'Fazendo build do projeto...'", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Israel Wilson Duarte",
   "license": "ISC",
   "dependencies": {
     "faker": "^5.5.3",
