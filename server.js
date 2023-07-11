@@ -41,14 +41,18 @@ const characterNames = [
   "Madara Uchiha",
   "Obito Uchiha",
   "Rin Nohara",
-  "Killer Bee"
+  "Killer Bee",
+  "Maneskin",
+  "Red Hot Chili Peppers",
+  "Offspring",
+  "Engenheiros do Hawaii",
+  "Charlie Brown Jr.",
+  "Eric Clapton",
+  "Guns and Roses",
+  "Beat Crusaders"
 ];
 
 app.use(express.static('public'));
-
-app.get('/socket.io/socket.io.js', (req, res) => {
-  res.sendFile(__dirname + '/node_modules/socket.io/client-dist/socket.io.js');
-});
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
@@ -71,5 +75,15 @@ io.on('connection', (socket) => {
 const port = process.env.PORT || 3000;
 
 server.listen(port, () => {
+  console.log(" _____          _____                        _ ");
+  console.log("| ___ \\        |_   _|                      | |");
+  console.log("| |_/ / _   _    | |  ___  _ __  __ _   ___ | |");
+  console.log("| ___ \\| | | |   | | / __|| '__|/ _` | / _ \\| |");
+  console.log("| |_/ /| |_| |  _| |_\\__ \\| |  | (_| ||  __/| |");
+  console.log("\\____/  \\__, |  \\___/|___/|_|   \\__,_| \\___||_|");
+  console.log("        __/ /                                  ");
+  console.log("       |___/                                   ");
+  
+
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
